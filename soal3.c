@@ -27,7 +27,7 @@ void *lohan () {
   }
 }
 void makan () {
- printf("hewan yang di berimakan\n1. kepiting\n2. Lohan\n");
+ printf("Hewan yang di berimakan\n1. Kepiting\n2. Lohan\n");
  int a;
  scanf ("%d", &a);
  if (a==1) {
@@ -50,8 +50,8 @@ int main ()  {
  while (1) {
   int pilihan;
   if(threads[1] <= 0 || threads[1] > 100 || threads[0] <= 0 || threads[0] > 100) {
-   printf("Status lohan = %d\n", threads[1]);
-   printf("Status kepiting = %d\n", threads[0]);
+   printf("Status Lohan = %d\n", threads[1]);
+   printf("Status Kepiting = %d\n", threads[0]);
    printf("GAME OVER\n");
    exit(EXIT_FAILURE);
   }
