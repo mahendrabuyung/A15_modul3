@@ -13,7 +13,7 @@ int main()
 	int shmid = shmget ( key, 6*sizeof (int), IPC_CREATE | 6666 );
 	int *jumlah_senjata = (int*) shmat(shmid, NULL, 0);
 
-	int pilih_senjata;
+	int pilih_senjata=0;
 	printf("PILIH MENU SENJATA:\n 1. Lihat Senjata \n 2. Tambah Senjata \n 3. EXIT \n");
 
 	char nama_senjata[5][10]={"PM2-V1","MP4A1","SPR-3","SS2-V5","SPG1-V3","MINE"};
